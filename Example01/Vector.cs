@@ -12,6 +12,8 @@ namespace Example01
 
         public double Y { get; set; }
 
+        public int Order { get; set; }
+
         public double Length
         {
             get { return Math.Sqrt(X * X + Y * Y); }
@@ -26,7 +28,14 @@ namespace Example01
         public int CompareTo(object obj)
         {
             Vector B = obj as Vector;
-            return (int)(this.Length - B.Length);
+            if (this.Length > B.Length)
+                return 1 * Order;
+            else if (this.Length == B.Length)
+                return 0;
+            else
+                return -1 * Order;
+
+            //return (int)(this.Length - B.Length);
         }
 
         public override string ToString()
