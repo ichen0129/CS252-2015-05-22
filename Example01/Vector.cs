@@ -13,6 +13,7 @@ namespace Example01
         public double Y { get; set; }
 
         // public int Order { get; set; }
+        //靜態變數對於這個類別來說，類別內的所有人都共用這個靜態變數
         public static int Order { get; set; }
 
         public double Length
