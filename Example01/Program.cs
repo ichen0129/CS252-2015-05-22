@@ -19,11 +19,11 @@ namespace Example01
             vectors[4] = new Vector(3, 8);
             */
             Student[] students = new Student[5];
-            students[0] = new Student(80, 95, 60);
-            students[1] = new Student(52, 80, 77);
-            students[2] = new Student(90, 78, 62);
-            students[3] = new Student(66, 75, 74);
-            students[4] = new Student(65, 99, 66);
+            students[0] = new Student(80, 95, 60, "小明");
+            students[1] = new Student(52, 80, 77, "小英");
+            students[2] = new Student(90, 78, 62, "小華");
+            students[3] = new Student(66, 75, 74, "小寶");
+            students[4] = new Student(65, 99, 66, "大寶");
 
             Console.Write("請指定排序科目，(1)國文 (2)英文 (3)數學 (4)總分");
             int SubjectOption = int.Parse(Console.ReadLine());
